@@ -12,3 +12,8 @@ tamanho maior, com uma descrição completa e a data da viagem.
 encontrar fotos por palavras-chave no título ou na descrição.
 Este projeto é uma forma de aplicar e consolidar os conceitos que você
 aprendeu, criando uma aplicação completa e interativa.
+
+django-admin:
+
+login: admin
+senha: admin
