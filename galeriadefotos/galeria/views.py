@@ -1,5 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from .models import Photo
 
-# Create your views here.
 def index(request):
-    return render(request, 'galeria/index.html')
+    photos = Photo.objects.all()
+    return render(request, 'galeria/index.html', {'photos': photos})
+
+def photo_detail(request, pk):
+    photo = get_object_or_404(Photo, pk=pk)
+    return render(request, 'galeria/photo_detail.html', {'photo': photo})
